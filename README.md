@@ -5,7 +5,7 @@
 > Extracting 11 actionable strategy frameworks from the 2,300-year-old classic *Guiguzi*, adapted for all major AI tools.
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/your-username/guiguzi-ai-skill)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/DODO0494/guiguzi)
 [![Language](https://img.shields.io/badge/language-中文-red.svg)]()
 [![AI Ready](https://img.shields.io/badge/AI-ChatGPT%20%7C%20Claude%20%7C%20WorkBuddy-green.svg)]()
 
@@ -108,7 +108,7 @@ guiguzi-ai-skill/
 ├── SKILL.md                           # WorkBuddy Skill 主入口
 ├── LICENSE                            # CC BY-NC-SA 4.0
 ├── .github/
-│   └── FUNDING.yml                    # GitHub Sponsors 配置
+│   └── FUNDING.yml                    # 赞助配置（爱发电）
 ├── modules/                           # 11 套框架完整内容
 │   ├── s01-bai-he-shu.md              # 捭阖术
 │   ├── s02-fan-ying-shu.md            # 反应术
@@ -216,6 +216,6 @@ guiguzi-ai-skill/
 
 ## 支持作者 | Support
 
-如果这个项目对你有帮助，欢迎通过 GitHub Sponsors 支持持续更新。
+如果这个项目对你有帮助，欢迎通过 [爱发电](https://afdian.com/a/dodo0494) 支持持续更新。
 
 <sub>作者背景：公关策划出身，服务过腾讯、百度等互联网企业，现自由职业者。非程序员，在 AI 辅助下完成此项目——证明 AI 时代，领域知识 + AI 工具 = 新可能。</sub>
