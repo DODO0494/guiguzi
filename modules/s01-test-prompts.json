@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-bai-he-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我跟老板汇报工作，说到一半他表情变了，我不确定是该继续说还是停下来。怎么判断？",
+      "expected_behavior": "调用捭阖术，分析当前应捭（继续开口）还是阖（闭嘴），并根据老板的表情判断阴阳状态切换策略",
+      "notes": "正面场景：对话中的开关判断困境"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "跟客户谈判时，我不知道什么时候该让步，什么时候该坚持，有没有判断框架？",
+      "expected_behavior": "调用捭阖术，用阴阳切换体系分析谈判中开闭的时机选择",
+      "notes": "正面场景：谈判中的捭阖策略"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "社交场合我一直拿不准什么时候该多说话表现自己，什么时候该保持低调，有没有一个系统的方法来判断？",
+      "expected_behavior": "调用捭阖术，教用户根据对方状态和场景判断捭阖切换的时机",
+      "notes": "正面场景：社交中的说话策略"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我怎么知道在对话中该说'好的方面'还是'坏的方面'？感觉有时该画饼有时该预警，拿不准。",
+      "expected_behavior": "调用捭阖术，解释阳言（始/善/利益）和阴言（终/恶/危害）的选择规则",
+      "notes": "正面场景：话语色彩的选择"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我写一个Python脚本来处理CSV文件",
+      "expected_behavior": "纯技术编程请求，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想知道对方心里到底在想什么，他说话总是说一半藏一半",
+      "expected_behavior": "应调用反应术（gui-gu-zi-fan-ying-shu）而非捭阖术——这是信息钓取场景不是开关判断",
+      "notes": "跨Skill混淆：反应术的场景"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我平时话很多，朋友说我需要学会闭嘴，是不是任何时候少说话都对？",
+      "expected_behavior": "调用捭阖术，纠正'少说话就是好'的误区——捭阖不是少说而是有策略地说或不说，阴阳色彩配合场景切换",
+      "notes": "边界：用户把捭阖误解为'少说话'"
+    }
+  ]
+}

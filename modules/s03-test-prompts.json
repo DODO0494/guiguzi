@@ -1,0 +1,62 @@
+{
+  "skill": "gui-gu-zi-nei-jian-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "想跟一个行业大佬建立深度关系，但他不缺钱也不缺朋友，怎么切入？",
+      "expected_behavior": "调用内揵术，分析四通道（道德/党友/财货/采色）中哪个通道对他有效，建议用道德或采色通道",
+      "notes": "正面场景：四通道选择判断"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我花了很长时间巴结一个人，吃饭送礼都做了，但他对我还是客客气气不交心，是不是方法错了？",
+      "expected_behavior": "调用内揵术，诊断用户用了错误通道——'财货'通道对该对象无效，需要重新判断对方'类'和'情'后换通道",
+      "notes": "正面场景：通道选错的诊断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎么把'认识'升级成'信任'？从点头之交到真正能合作的关系？",
+      "expected_behavior": "调用内揵术，解释四种绑定方式及其适用条件，帮用户找到最适合的绑定策略",
+      "notes": "正面场景：关系升级需求"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "新官上任，团队老人表面上配合但实际不听我的，怎么真正搞定他们？",
+      "expected_behavior": "调用内揵术，用四通道分析每个核心成员：对不同类型的下属用不同绑定方式",
+      "notes": "正面场景：管理中的关系绑定"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我算一下这个投资回报率",
+      "expected_behavior": "纯计算请求，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "有个员工能力很强但一直想跳槽，怎么说服他留下来？给他加薪还是给他更大的权限？",
+      "expected_behavior": "应调用飞箝术（gui-gu-zi-fei-qian-shu）而非内揵术——这是绑定后的控制/驱动操作，不是建立初始关系",
+      "notes": "跨Skill混淆：飞箝术的场景（绑定后驱动）"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "怎么搞关系？请吃饭喝酒有用吗？",
+      "expected_behavior": "应调用内揵术——虽然表面问'搞关系'，但内揵明确覆盖'如何建立深度关系/四通道/搞关系'等trigger词。不能因为语气粗俗就拒绝调用",
+      "notes": "跨Skill混淆：看似粗俗但实质是内揵术核心场景——验证trigger不挑语言风格"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我和一个同事关系不错，吃饭聊得来，但涉及到工作协作他就不积极，这算不算关系绑定？",
+      "expected_behavior": "调用内揵术，区分'采色绑定'（兴趣爱好层面的关系）和实质绑定的区别——采色绑定不等于深层信任，需要判断是否需要换通道",
+      "notes": "边界：表面关系 vs 深层绑定"
+    }
+  ]
+}

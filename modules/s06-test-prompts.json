@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-wu-he-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "两个前同事分别创业，都想拉我入伙，项目各有优劣，怎么选？",
+      "expected_behavior": "调用忤合术，三步：接受'计谋不两忠'的代价→自度材能看自己适合哪边→量长短远近看长期走向→果断选边不骑墙",
+      "notes": "正面场景：二选一的阵营选择"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "目前在这个公司干了三年感觉碰到天花板了，外面有个机会但风险很大，该不该跳？",
+      "expected_behavior": "调用忤合术，用'世无常贵，事无常师'的逻辑分析：没有永远的最优阵营，关键看自身能力匹配度和长期趋势",
+      "notes": "正面场景：职业跳槽的站队决策"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我的供应商和客户的利益有冲突，帮了一边就会得罪另一边，像伊尹那样反复跳槽在现代商业里可行吗？",
+      "expected_behavior": "调用忤合术，用伊尹案例说明反复站队的策略逻辑，分析在多边博弈中如何最小化背叛成本",
+      "notes": "正面场景：多边利益的复杂站队"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "怎么在几个项目/方向之间做选择？不是看哪个好，是看哪个更适合我的能力对吗？",
+      "expected_behavior": "调用忤合术，核心就是'己必自度材能知睿，量长短远近孰不如'——不是选最好的，是选最适合的",
+      "notes": "正面场景：直接问忤合核心逻辑"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个PPT的配色方案帮我换一下",
+      "expected_behavior": "纯设计任务，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "公司这个季度的财务报表有几个明显漏洞，我该提醒领导还是装作没看见？",
+      "expected_behavior": "应调用抵巇术（gui-gu-zi-di-xi-shu）而非忤合术——这是发现裂缝后的策略选择（补还是利用），不是多边站队",
+      "notes": "跨Skill混淆：抵巇术的场景（裂缝策略）"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "在公司和外包团队之间，我该忠诚于公司还是优先考虑自己的利益？",
+      "expected_behavior": "调用忤合术——这是典型的'计谋不两忠'困境。但需要注意：忤合术是结果导向的策略框架，不是伦理建议。最终选择取决于计算而非道德",
+      "notes": "边界：道德困境 vs 策略计算"
+    }
+  ]
+}

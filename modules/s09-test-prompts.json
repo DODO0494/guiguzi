@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-mou-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个突发机会出现在面前但需要快速决定是否投入资源，怎么系统性地想而不是凭直觉拍脑袋？",
+      "expected_behavior": "调用谋术三步：三仪立谋（列出上中下三策交叉对比逼出奇策）→七步链（变→谋→计→议→说→进→退）→公私奇正（正面跟进不如出奇制胜）",
+      "notes": "正面场景：突发机会的系统性分析"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "做方案时总是只有两个选项，要不就A要不就B，怎么才能想到第三个更好的方案？",
+      "expected_behavior": "调用谋术三仪立策——审得其情乃立三仪（上中下三策），参以立焉以生奇。三策对比不是为了选一个，而是为了从对比中生出第四个意想不到的选项",
+      "notes": "正面场景：从二元选择中生成创意方案"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "有个商业计划我觉得很完美，但之前几个类似的项目都失败了，我该不该坚持？",
+      "expected_behavior": "调用谋术阴道阳取原则——计谋之用公不如私，私不如结。不要公开推进，先私下测试和结盟。正不如奇，奇流而不止——正面不行就出奇",
+      "notes": "正面场景：有历史失败阴影的新方案推进"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "怎么设计一个完整的项目推进方案？从发现问题到落地执行的全流程？",
+      "expected_behavior": "调用谋术七步生成链：变生于事→事生谋→谋生计→计生议→议生说→说生进→进生退→退生制",
+      "notes": "正面场景：完整的谋略生成"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我整理一下上周的会议纪要",
+      "expected_behavior": "纯文档整理，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "方案已经做好了，上中下三策都列出来了，但拿不准选哪个，怎么拍板？",
+      "expected_behavior": "应调用决术（gui-gu-zi-jue-shu）而非谋术——方案生成已完成，现在是决策选择阶段。谋术在上游生成选项，决术在下游选择选项",
+      "notes": "跨Skill混淆：决术的场景（方案已出，需要拍板）"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想了一个'完美'的计划但不敢跟任何人说，怕泄露了就没优势了，一直放在脑子里越想越完美但就是不敢行动",
+      "expected_behavior": "调用谋术——这正是谋术关于公不如私、阴道阳取的最佳切入点。谋术告诉你秘密运作是正确策略，但需要从'私'升级到'结'（找可结盟的核心人员），否则永远停留在'私'阶段无法落地",
+      "notes": "边界：完美主义拖延 vs 谋术的从私到结"
+    }
+  ]
+}

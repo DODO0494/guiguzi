@@ -1,0 +1,62 @@
+{
+  "skill": "gui-gu-zi-di-xi-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "公司内部两个部门长期不和，我想推动一个需要跨部门协作的项目，怎么办？",
+      "expected_behavior": "调用抵巇术，先找裂缝根源，判断裂缝程度和可利用性，再选策略：如果可修补（共同利益够大）抵而塞之，如果不可调和则抵而得之",
+      "notes": "正面场景：组织裂缝的识别与策略选择"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "竞争对手的核心团队出现了内部矛盾，这个消息对我有什么用？该趁机挖人还是坐等他们内耗？",
+      "expected_behavior": "调用抵巇术，分析裂缝发展阶段（巇→罅→涧→大隙），判断当前阶段适合观望/修补/还是取而代之",
+      "notes": "正面场景：竞对裂缝的利用判断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "发现了一个行业里存在的普遍痛点但大公司都视而不见，这是不是就是'裂缝'？我该从哪个角度切入？",
+      "expected_behavior": "调用抵巇术，确认这是可抵的裂隙，帮助分析裂缝的阶段和'抵而得之'的策略",
+      "notes": "正面场景：行业机会=裂缝"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "老板和CEO之间关系紧张，我是老板的助理，夹在中间很难做，该怎么处理？",
+      "expected_behavior": "调用抵巇术，分析裂缝大小和自身位置，判断是修补（调和）、躲避（深隐待时）还是借势（利用一方）",
+      "notes": "正面场景：权力裂缝中的个人生存策略"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我做一个Excel表格汇总本月销售数据",
+      "expected_behavior": "纯数据处理，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "收到两家公司的offer，各有优劣，不知道怎么选？",
+      "expected_behavior": "应调用忤合术（gui-gu-zi-wu-he-shu）而非抵巇术——这是多选一站队问题，不涉及系统裂缝",
+      "notes": "跨Skill混淆：忤合术的场景（站队选择）"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "产品上线后用户反馈说有个小bug，要不要马上修复？",
+      "expected_behavior": "不调用抵巇术——这是常规bug修复决策，'裂缝'在鬼谷子意义上指的是系统性的/可被策略利用的裂痕，不是日常小问题",
+      "notes": "跨Skill混淆：日常小问题不是抵巇意义的裂缝"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "团队里有人离职了，大家都觉得是小事，但我觉得这可能是个信号。该不该重视？",
+      "expected_behavior": "调用抵巇术——这正是'巇始有朕'（裂缝初现征兆）的典型场景。需要分析这是孤立事件还是系统性裂缝的起点",
+      "notes": "边界：裂缝初期信号识别"
+    }
+  ]
+}

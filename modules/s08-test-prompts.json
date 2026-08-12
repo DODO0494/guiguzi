@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-quan-bian-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要给投资人/技术合伙人/普通员工分别讲同一个项目，该怎么讲才能让每个人都买账？",
+      "expected_behavior": "调用权变术九类人话术矩阵：投资人=贵者依于势（市场格局和竞争壁垒），技术合伙人=智者依于博（技术深度和前瞻性），普通员工=拙者依于辩（清晰对比说明为什么靠谱）",
+      "notes": "正面场景：同一内容对不同对象的话术适配"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我在跟不同客户沟通时发现，同一套说辞对某些人管用对某些人完全没用，是不是该根据不同的人调整？怎么调？",
+      "expected_behavior": "调用权变术九类对象九种话术的完整矩阵，帮用户建立'因人施言'的系统方法",
+      "notes": "正面场景：话术适配的系统化需求"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "跟一个很抠门的老板谈加薪，怎么开口比较好？",
+      "expected_behavior": "调用权变术——跟富者言依于高（强调你的价值而非成本），但注意对方是抠门不是真穷，需要配合揣摩先判断对方类型",
+      "notes": "正面场景：具体对象的话术选择"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我发现自己生气时说的话总是后悔，有没有什么说话前的自检方法？",
+      "expected_behavior": "调用权变术五情禁言——病/恐/忧/怒/喜五者有一必失中和。教用户在情绪状态下先识别再暂停",
+      "notes": "正面场景：情绪状态下的说话管理"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我写一份竞品分析报告",
+      "expected_behavior": "纯分析报告写作，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想搞清楚某个人到底要什么，这样我才好跟他谈判",
+      "expected_behavior": "应调用揣摩术（gui-gu-zi-chuai-mo-shu）而非权变术——这是情报收集阶段（揣摩），不是话术输出阶段（权变）。先摸清再说",
+      "notes": "跨Skill混淆：揣摩术的场景（情报收集 → 话术输出的上游）"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我天生不太会说话，每次社交都紧张不知道该说什么，学话术有用吗？",
+      "expected_behavior": "调用权变术，但需要先指出权变术不是'学话术模板'而是'学分类判断+适配'——核心不是变得会说话，而是学会判断对象类型后选择话术方向。对社交紧张的人，重点放在'分类'而非'话术'",
+      "notes": "边界：社交焦虑 vs 话术适配——权变术不是社交技巧速成"
+    }
+  ]
+}

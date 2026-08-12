@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-fan-ying-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "合伙人嘴上说支持我的方案但总觉得他不太对劲，怎么确认他真实想法？",
+      "expected_behavior": "调用反应术，用四步法：沉默让他多说→找矛盾点→反问针对矛盾点→验证一致性",
+      "notes": "正面场景：探测隐藏的真实态度"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "面试时怎么通过提问让对方自己暴露真实水平，而不是听他准备好的标准答案？",
+      "expected_behavior": "调用反应术，用象比法和钓语法设计反问策略让候选人暴露真实能力",
+      "notes": "正面场景：面试中钓取真实信息"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "对方一直在回避我的问题，每次问都绕圈子，有什么技巧让他正面回答？",
+      "expected_behavior": "调用反应术，使用'欲闻其声反默'和反钓技巧，通过逆向行为逼出对方真实回应",
+      "notes": "正面场景：对付回避型对话者"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "怎么套话？在不得罪对方的前提下让他自己把底牌露出来？",
+      "expected_behavior": "调用反应术，教用户用钓鱼式反问而非直接逼问——象比引导+矛盾点追问+覆验",
+      "notes": "正面场景：直接问'怎么套话'"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我翻译这段英文文档",
+      "expected_behavior": "纯翻译任务，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "跟大客户见面，我该先说话热场还是等他先开口？",
+      "expected_behavior": "应调用捭阖术（gui-gu-zi-bai-he-shu）而非反应术——这是开闭判断而非信息钓取",
+      "notes": "跨Skill混淆：捭阖术的场景"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "朋友最近总是给我发长篇大论抱怨生活，我该认真听还是敷衍？",
+      "expected_behavior": "不调用反应术——这是日常朋友倾诉而非信息钓取场景。反应术针对的是'需要获取对方隐藏的真实信息'的情境，而非一般性倾听建议",
+      "notes": "边界：日常倾诉 vs 信息钓鱼"
+    }
+  ]
+}

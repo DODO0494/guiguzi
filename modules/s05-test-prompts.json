@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-fei-qian-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个很有才华的自由职业者想拉他入伙，但他一直在犹豫，给多少钱都不给准话，怎么搞定？",
+      "expected_behavior": "调用飞箝术，三步操作：飞（赞美才华抬高他）→钩箝（抛他关心的资源/自由度，乍同乍异制造好奇）→空往实来（给虚名换实利）",
+      "notes": "正面场景：挖人/拉拢犹豫的人才"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "谈一个重要的合作方，对方对我的方案有兴趣但也同时在接触其他家，怎么让他倒向我这边？",
+      "expected_behavior": "调用飞箝术，用赞誉抬高对方地位感使其锚定后，再给独家利益钩子使其无法脱身",
+      "notes": "正面场景：竞争中的合作方争取"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎么让一个比你地位高的人按你的想法做事？直接提会被拒绝，不提又没进展。",
+      "expected_behavior": "调用飞箝术，不可硬推——先用赞美抬对方（飞），再用利益和期望钩住（箝），让对方觉得做这件事是'自己的英明决策'",
+      "notes": "正面场景：向上管理/影响上级"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "遇到一个软硬不吃的人，赞美对他没用，利益也打动不了，怎么破？",
+      "expected_behavior": "调用飞箝术，原文有'不可善者'的处理方法——或先征之而后重累，或先重以累而后毁之。赞美+利益无效时采用'重累'策略",
+      "notes": "正面场景：对付软硬不吃的人（飞箝术特殊场景）"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "翻译这段日文说明书",
+      "expected_behavior": "纯翻译，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "刚认识一个投资人，想跟他建立长期关系，第一步该怎么做？",
+      "expected_behavior": "应调用内揵术（gui-gu-zi-nei-jian-shu）而非飞箝术——这是建立初始关系绑定，不是绑定后的控制操作",
+      "notes": "跨Skill混淆：内揵术的场景（关系建立）"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我老板对我很好，什么都听我的，但我总觉得这种关系不牢靠，是不是我想多了？",
+      "expected_behavior": "不调用飞箝术——这是关系稳固性焦虑，不是需要控制/驱动对方的场景。飞箝术针对的是'需要让对方按自己意志行动'的场景",
+      "notes": "边界：关系焦虑 ≠ 控制需求"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "skill": "gui-gu-zi-fu-yan-jiu-shou",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "作为新晋管理者，感觉团队在失控但不知道问题出在哪，怎么系统地自查？",
+      "expected_behavior": "调用符言九守逐条对照：主位（安徐正静）、主明（信息是否畅通）、主德（有没有拒过下属意见）、主赏（赏罚是否分明）、主问（是否穷尽天时地利人事）等九条自检",
+      "notes": "正面场景：管理者的系统自查"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我感觉最近做决策越来越容易出错，以前不会犯的错现在经常犯，是不是我自己的状态出问题了？",
+      "expected_behavior": "调用符言九守从'位'开始——安徐正静是否保持？从内修状态排查到信息渠道（明）、决策刚性（德）、赏罚失衡（赏）",
+      "notes": "正面场景：决策质量下降的自我诊断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎么确保自己作为领导者不被身边人蒙蔽？怎么建立真实的信息渠道？",
+      "expected_behavior": "调用符言九守的主明（以天下之目视/耳听/心虑）+ 主恭（长目飞耳树明）——不被亲信垄断信息，建立多层信息渠道",
+      "notes": "正面场景：信息茧房的突破"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "最近总是听不进别人的意见，团队的人也不太敢跟我说话了，怎么破？",
+      "expected_behavior": "调用符言九守的主德——勿坚而拒之。拒绝=闭塞，先恢复'不坚拒'的通道，再回到主明重建信息通畅",
+      "notes": "正面场景：领导者闭塞状态的修复"
+    },
+    {
+      "id": "should-trigger-05",
+      "type": "should_trigger",
+      "prompt": "有什么可以每周或每月做的领导力自检清单？",
+      "expected_behavior": "调用符言九守九条法则作为定期自检清单——位/明/德/赏/问/因/周/恭/名逐条对照",
+      "notes": "正面场景：定期自检清单需求"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我调一下这个PPT动画的时间轴",
+      "expected_behavior": "纯设计操作，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "下属的工作效率太低了，怎么激励他提高产出？",
+      "expected_behavior": "不调用符言九守——这是员工管理/激励问题而非领导者内修问题。虽然主赏涉及赏罚，但场景是'怎么管别人'而非'怎么查自己'",
+      "notes": "跨Skill混淆：员工管理 ≠ 领导者自检"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "我想提升自己的表达能力，有什么建议？",
+      "expected_behavior": "不调用符言九守——这是个人沟通技能提升而非决策者内修。虽然主位涉及安徐正静，但表达能力属于权变术的范畴（话术适配）",
+      "notes": "跨Skill混淆：沟通能力提升 ≠ 决策者内修"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我最近工作很忙但感觉产出很低，是不是效率出问题了？",
+      "expected_behavior": "调用符言九守——表面问效率但实际可能是内修层问题。从主位（安徐正静是否保持？忙碌但不安静可能是核心问题）和主问（是否在忙对的事情？穷尽天时地利人事了吗）两个维度切入",
+      "notes": "边界：效率问题被重新定义为内修问题"
+    }
+  ]
+}

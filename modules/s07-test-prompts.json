@@ -1,0 +1,62 @@
+{
+  "skill": "gui-gu-zi-chuai-mo-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "竞标一个客户项目，不知道对手的报价和客户的真实预算，怎么定策略？",
+      "expected_behavior": "调用揣摩术双轨：量权（盘点对手实力/口碑/关系网/报价风格）+ 揣情（找窗口期了解客户最在意什么）+ 摩（多种低频信号试探）",
+      "notes": "正面场景：竞标中的情报收集"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎么摸清一个组织的真实底牌？不只是看他们对外说的，而是内部到底什么情况？",
+      "expected_behavior": "调用揣摩术量权框架，用十大维度（大小/众寡/货财/人民/地形/谋虑/君臣/宾客/天时/人心）逐项评估",
+      "notes": "正面场景：组织/公司的系统性摸底"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "对方平时滴水不漏从不露底，有没有什么时机能让他自己暴露真实想法？",
+      "expected_behavior": "调用揣摩术揣情法——必以其甚喜之时往而极其欲，必以其甚惧之时往而极其恶。在对方情绪极端窗口期（大喜或大惧）去测",
+      "notes": "正面场景：利用情绪窗口期探测"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我想知道投资人对我项目的真实看法，但他们不会直说，有什么不露痕迹的试探方法？",
+      "expected_behavior": "调用揣摩术摩法——用十种姿态（平正喜怒名行廉信利卑）作为饵抛向对方，观察哪种引发符应，暗中获取真实反馈",
+      "notes": "正面场景：暗中试探法"
+    },
+    {
+      "id": "should-trigger-05",
+      "type": "should_trigger",
+      "prompt": "做市场调研的时候，怎么判断一个市场的真实规模而不是被咨询报告忽悠？",
+      "expected_behavior": "调用揣摩术量权框架——十大维度可适配为市场评估工具，尤其关注'天时之祸福'（宏观风险）和'百姓之心去就'（真实需求）",
+      "notes": "正面场景：量权在市场调研中的现代应用"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我调试这段JavaScript代码的bug",
+      "expected_behavior": "纯编程debug，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "怎么在不直接问的情况下知道对方有没有说谎？",
+      "expected_behavior": "应调用反应术（gui-gu-zi-fan-ying-shu）而非揣摩术——这是单次对话的钓取技术而非系统性情报收集，反应术的'言有不合者反而求之'更精确",
+      "notes": "跨Skill混淆：反应术的场景（单次对话钓取 vs 系统性情报）"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我女朋友最近情绪不太对，问她也不说，我该怎么了解她到底在想什么？",
+      "expected_behavior": "不调用揣摩术——这是亲密关系中的日常沟通问题，揣摩术的情报框架过于'军事化'不适合此场景。用共情和直接关心比用极端情绪窗口期探测更合适",
+      "notes": "边界：亲密关系沟通 ≠ 策略性情报收集"
+    }
+  ]
+}

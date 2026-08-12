@@ -1,0 +1,55 @@
+{
+  "skill": "gui-gu-zi-jue-shu",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "团队对两个产品方向争执不下，各有道理，作为负责人怎么拍板让大家服气？",
+      "expected_behavior": "调用决术：三验（度以往事/验之来事/参之平素）+ 五可决场景判断 + 五术选手段（可能用蔽匿私下沟通或阳德公开宣布）",
+      "notes": "正面场景：团队分歧中的决策"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "朋友面临一个重大人生选择，找我来商量，我怎么帮他做决定而不是替他做决定？",
+      "expected_behavior": "调用决术——鬼谷子的决不是自己做决定而是协助他人决策。用五种手段根据情况择一：阳德（公开分析利弊）/信诚（以信誉担保建议）/蔽匿（帮他隐藏不利因素冷静判断）",
+      "notes": "正面场景：帮别人做决策"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "做决策的时候怎么避免被眼前的利益蒙蔽？有没有一个验证框架？",
+      "expected_behavior": "调用决术三验交叉验证法：度以往事（类似决策的历史结果）、验之来事（推演未来半年到一年的走向）、参之平素（是否符合一贯的规律和原则）——三方印证才下决断",
+      "notes": "正面场景：决策前的验证需求"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "有些事情我需要公开透明地宣布决定，有些事最好私下默默做了再说，怎么判断哪种场合用哪种方式？",
+      "expected_behavior": "调用决术五种手段的区分：阳德（公开行善/宣布）、阴贼（暗中除患）、信诚（以信誉担保）、蔽匿（隐藏不利信息）、平素（按常规惯例）——五种场景各有对应",
+      "notes": "正面场景：决策执行方式的选择"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我写一个Shell脚本自动备份数据库",
+      "expected_behavior": "纯脚本编写，不应调用任何鬼谷子Skill",
+      "notes": "诱饵：无关场景"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我连方案都还没想清楚，现在脑子一团乱不知道该从哪开始",
+      "expected_behavior": "应调用谋术（gui-gu-zi-mou-shu）而非决术——方案还没生成，谈决策为时尚早。先用谋术七步链梳理清楚再走到决术",
+      "notes": "跨Skill混淆：谋术的场景（还没到决策阶段）"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "晚饭吃什么？火锅还是日料？",
+      "expected_behavior": "不调用决术——日常琐事的选择不需要三验交叉验证和五种决策手段的框架。决术针对的是需要认真权衡的重大决策",
+      "notes": "边界：日常选择 vs 重大决策"
+    }
+  ]
+}
